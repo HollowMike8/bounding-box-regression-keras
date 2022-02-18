@@ -6,19 +6,19 @@ import os
 
 # Define the base path to the input dataset and then use it to derive the path to the images directory
 # and  the annotation CSV file
-BASE_PATH = "dataset"
-IMAGES_PATH = os.path.sep.join([BASE_PATH, "images"])
-ANNOTATIONS_PATH = os.path.sep.join([BASE_PATH, "airplanes.csv"])
+base_path = "dataset"
+images_path = os.path.join(BASE_PATH, "images")
+annotations_path = os.path.join(BASE_PATH, "airplanes.csv")
 
 # Define the path to the base output directory
-BASE_OUTPUT = "output"
+base_output = "output"
 
 # Define the path to the output serialized model, model training plot, and the testing image filenames
-MODEL_PATH = os.path.sep.join([BASE_OUTPUT, "detector.h5"])
-PLOT_PATH = os.path.sep.join([BASE_OUTPUT, "plot.png"])
-TEST_FILENAMES = os.path.sep.join([BASE_OUTPUT, "test_images.txt"])
+model_path = os.path.sep.join([BASE_OUTPUT, "detector.h5"])
+plot_path = os.path.sep.join([BASE_OUTPUT, "plot.png"])
+test_filenames = os.path.sep.join([BASE_OUTPUT, "test_images.txt"])
 
 # Initialize our initial learning rate, number of epochs to train for, and the batch size
-INIT_LR = 1e-4
-NUM_EPOCHS = 25
-BATCH_SIZE = 32
+alpha = 1e-4
+epochs = 25
+batch_size = 32
